@@ -1,0 +1,7 @@
+localnet/testnet/**
+localnet/snippets/node_modules/**
+localnet/snippets/package-lock.json
+localnet/snippets/**/*.session.sqlite
+localnet/snippets/out
+
+**/check-data/**

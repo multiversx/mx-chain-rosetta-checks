@@ -11,7 +11,7 @@ git clone git@github.com:ElrondNetwork/elrond-proxy-go.git --branch rosetta-deve
 Start the localnet using `erdpy` (will also start the Rosetta API):
 
 ```
-cd checks/localnet
+cd localnet
 erdpy testnet config
 erdpy testnet start
 ```
@@ -19,7 +19,7 @@ erdpy testnet start
 ## Execute a number of transactions
 
 ```
-cd checks/localnet/snippets
+cd localnet/snippets
 npm install
 ```
 
