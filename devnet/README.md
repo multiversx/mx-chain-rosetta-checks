@@ -37,6 +37,6 @@ rosetta-cli check:data --configuration-file devnet-data-start-after-${AFTER_BLOC
 Check the data API using historical balances:
 
 ```
-rosetta-cli check:data --configuration-file devnet-data-start-historical.json \
+rosetta-cli check:data --configuration-file devnet-data-historical.json \
 --online-url=${ROSETTA_ONLINE} --data-dir=devnet-${AFTER_BLOCK}-historical
 ```
