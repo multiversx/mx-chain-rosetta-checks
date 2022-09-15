@@ -5,7 +5,7 @@ A suite of configuration files that allow us to validate the Rosetta implementat
 ### Notes on `check:data`
 
  - `check:data` with historical balances lookup is supported, and it's the recommended method of validation.
- - `check:data` without historical balances (with _bootstrap balances_ instead) is supported, but is not recommended as a means of validation (hard to debug in case of reconciliation failures).
+ - `check:data` without historical balances (with _bootstrap balances_ instead) is supported, but is not recommended as a means of validation (hard to debug in case of reconciliation failures). Thus, configuration files for this approach are not present in the repository.
 
 ### Notes on `check:construction`
 
