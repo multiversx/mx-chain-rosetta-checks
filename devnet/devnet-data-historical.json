@@ -4,10 +4,10 @@
     "network": "D"
   },
   "http_timeout": 30,
-  "max_retries": 5,
-  "retry_elapsed_time": 10,
-  "max_online_connections": 512,
-  "max_sync_concurrency": 64,
+  "max_retries": 10,
+  "retry_elapsed_time": 20,
+  "max_online_connections": 256,
+  "max_sync_concurrency": 32,
   "tip_delay": 10,
   "max_reorg_depth": 100,
   "log_configuration": false,
@@ -19,7 +19,7 @@
   "data": {
     "start_index": 1399026,
     "active_reconciliation_concurrency": 64,
-    "inactive_reconciliation_concurrency": 32,
+    "inactive_reconciliation_concurrency": 8,
     "inactive_reconciliation_frequency": 16,
     "log_blocks": false,
     "log_transactions": true,

@@ -1,4 +1,4 @@
-@baseUrl = http://rosetta-devnet:8091
+@baseUrl = http://localhost:7091
 @baseNetwork = D
 
 ###
@@ -12,6 +12,6 @@ Content-Type: application/json
     "network": "{{baseNetwork}}"
   },
   "block_identifier": {
-    "index": 1
+    "index": 1399026
   }
 }
