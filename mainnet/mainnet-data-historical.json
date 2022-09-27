@@ -1,7 +1,7 @@
 {
   "network": {
     "blockchain": "Elrond",
-    "network": "1"
+    "network": "mainnet"
   },
   "http_timeout": 30,
   "max_retries": 10,
