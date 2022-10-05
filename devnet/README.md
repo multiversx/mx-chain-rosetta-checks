@@ -12,6 +12,9 @@ Check the construction API:
 ```
 rosetta-cli check:construction --configuration-file devnet-construction.json \
 --online-url=${ROSETTA_ONLINE} --offline-url=${ROSETTA_OFFLINE}
+
+rosetta-cli check:construction --configuration-file devnet-construction-with-metadata.json \
+--online-url=${ROSETTA_ONLINE} --offline-url=${ROSETTA_OFFLINE}
 ```
 
 Set a starting point for the data API checks:
