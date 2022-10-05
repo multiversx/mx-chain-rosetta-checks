@@ -10,6 +10,9 @@ export ROSETTA_OFFLINE=http://localhost:7092
 Check the construction API:
 
 ```
+rosetta-cli check:construction --configuration-file devnet-construction-with-metadata.json \
+--online-url=${ROSETTA_ONLINE} --offline-url=${ROSETTA_OFFLINE}
+
 rosetta-cli check:construction --configuration-file devnet-construction.json \
 --online-url=${ROSETTA_ONLINE} --offline-url=${ROSETTA_OFFLINE}
 ```
