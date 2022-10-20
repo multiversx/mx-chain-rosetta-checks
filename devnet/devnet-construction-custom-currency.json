@@ -14,7 +14,7 @@
         },
         "stale_depth": 10,
         "broadcast_limit": 5,
-        "constructor_dsl_file": "devnet-custom-construction-with-metadata.ros",
+        "constructor_dsl_file": "devnet-construction-custom-currency.ros",
         "prefunded_accounts": [
             {
                 "account_identifier": {

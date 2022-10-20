@@ -32,7 +32,7 @@ export CUSTOM_CURRENCY='"ROSETTA-057ab4"'
 export RECEIVER='"erd1testnlersh4z0wsv8kjx39me4rmnvjkwu8dsaea7ukdvvc9z396qykv7z7"'
 export AMOUNT='"1"'
 
-rosetta-cli check:construction --configuration-file devnet-custom-construction-with-metadata.json \
+rosetta-cli check:construction --configuration-file devnet-construction-custom-currency.json \
 --online-url=${ROSETTA_ONLINE} --offline-url=${ROSETTA_OFFLINE}
 ```
 
