@@ -1,0 +1,109 @@
+@baseUrl = http://localhost:7091
+@baseNetwork = devnet
+
+# The following Construction API example starts with an operation (on sender's side) and a metadata holding the receiver address.
+# This approach works when the sender is observed by Rosetta (i.e. is located in the observed projected shard),
+# while the receiver may be located in any shard.
+
+###
+
+POST {{baseUrl}}/construction/preprocess HTTP/1.1
+Content-Type: application/json
+
+{
+    "network_identifier": {
+        "blockchain": "Elrond",
+        "network": "{{baseNetwork}}"
+    },
+    "operations": [
+        {
+            "operation_identifier": {},
+            "type": "Transfer",
+            "account": {
+                "address": "erd1ldjsdetjvegjdnda0qw2h62kq6rpvrklkc5pw9zxm0nwulfhtyqqtyc4vq"
+            },
+            "amount": {
+                "value": "1",
+                "currency": {
+                    "symbol": "ROSETTA-057ab4",
+                    "decimals": 0
+                }
+            }
+        }
+    ],
+    "metadata": {
+        "receiver": "erd1testnlersh4z0wsv8kjx39me4rmnvjkwu8dsaea7ukdvvc9z396qykv7z7"
+    }
+}
+
+###
+
+# If gasLimit and gasPrice are not specified, they will receive the default values.
+
+POST {{baseUrl}}/construction/metadata HTTP/1.1
+Content-Type: application/json
+
+{
+    "network_identifier": {
+        "blockchain": "Elrond",
+        "network": "{{baseNetwork}}"
+    },
+    "options": {
+        "sender": "erd1ldjsdetjvegjdnda0qw2h62kq6rpvrklkc5pw9zxm0nwulfhtyqqtyc4vq",
+        "receiver": "erd1testnlersh4z0wsv8kjx39me4rmnvjkwu8dsaea7ukdvvc9z396qykv7z7",
+        "amount": "1",
+        "currencySymbol": "ROSETTA-057ab4",
+        "gasLimit": 0,
+        "gasPrice": 0,
+        "data": null
+    }
+}
+
+###
+
+POST {{baseUrl}}/construction/payloads HTTP/1.1
+Content-Type: application/json
+
+{
+    "network_identifier": {
+        "blockchain": "Elrond",
+        "network": "{{baseNetwork}}"
+    },
+    "operations": [
+        {
+            "operation_identifier": {},
+            "type": "Transfer",
+            "account": {
+                "address": "erd1ldjsdetjvegjdnda0qw2h62kq6rpvrklkc5pw9zxm0nwulfhtyqqtyc4vq"
+            },
+            "amount": {
+                "value": "1",
+                "currency": {
+                    "symbol": "ROSETTA-057ab4",
+                    "decimals": 0
+                }
+            }
+        }
+    ],
+    "metadata": {
+        "amount": "1",
+        "chainID": "D",
+        "currencySymbol": "ROSETTA-057ab4",
+        "data": "RVNEVFRyYW5zZmVyQDUyNGY1MzQ1NTQ1NDQxMmQzMDM1Mzc2MTYyMzRAMDE=",
+        "gasLimit": 616000,
+        "gasPrice": 1000000000,
+        "nonce": 74,
+        "receiver": "erd1testnlersh4z0wsv8kjx39me4rmnvjkwu8dsaea7ukdvvc9z396qykv7z7",
+        "sender": "erd1ldjsdetjvegjdnda0qw2h62kq6rpvrklkc5pw9zxm0nwulfhtyqqtyc4vq",
+        "version": 1
+    },
+    "suggested_fee": [
+        {
+            "value": "121000000000000",
+            "currency": {
+                "symbol": "XeGLD",
+                "decimals": 18
+            }
+        }
+    ]
+}
