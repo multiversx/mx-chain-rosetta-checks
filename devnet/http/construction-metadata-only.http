@@ -26,7 +26,7 @@ Content-Type: application/json
         "sender": "erd1ldjsdetjvegjdnda0qw2h62kq6rpvrklkc5pw9zxm0nwulfhtyqqtyc4vq",
         "receiver": "erd1qyu5wthldzr8wx5c9ucg8kjagg0jfs53s8nr3zpz3hypefsdd8ssycr6th",
         "amount": "1",
-        "currencySymbol": "XeGLD"
+        "currencySymbol": "XEGLD"
     }
 }
 
@@ -46,7 +46,7 @@ Content-Type: application/json
         "sender": "erd1ldjsdetjvegjdnda0qw2h62kq6rpvrklkc5pw9zxm0nwulfhtyqqtyc4vq",
         "receiver": "erd1qyu5wthldzr8wx5c9ucg8kjagg0jfs53s8nr3zpz3hypefsdd8ssycr6th",
         "amount": "1",
-        "currencySymbol": "XeGLD",
+        "currencySymbol": "XEGLD",
         "gasLimit": 0,
         "gasPrice": 0,
         "data": null
@@ -74,7 +74,7 @@ Content-Type: application/json
     "metadata": {
         "amount": "1",
         "chainID": "D",
-        "currencySymbol": "XeGLD",
+        "currencySymbol": "XEGLD",
         "data": null,
         "gasLimit": 50000,
         "gasPrice": 1000000000,
@@ -87,7 +87,7 @@ Content-Type: application/json
         {
             "value": "50000000000000",
             "currency": {
-                "symbol": "XeGLD",
+                "symbol": "XEGLD",
                 "decimals": 18
             }
         }
