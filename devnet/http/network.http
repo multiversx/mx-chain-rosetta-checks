@@ -16,7 +16,7 @@ Content-Type: application/json
 
 {
     "network_identifier": {
-      "blockchain": "Elrond",
+      "blockchain": "MultiversX",
       "network": "{{baseNetwork}}"
     },
     "metadata": {}
@@ -30,7 +30,7 @@ Content-Type: application/json
 
 {
   "network_identifier": {
-    "blockchain": "Elrond",
+    "blockchain": "MultiversX",
     "network": "{{baseNetwork}}"
   },
   "metadata": {}

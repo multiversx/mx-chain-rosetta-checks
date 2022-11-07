@@ -1,6 +1,6 @@
 {
   "network": {
-    "blockchain": "Elrond",
+    "blockchain": "MultiversX",
     "network": "mainnet"
   },
   "http_timeout": 30,

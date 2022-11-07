@@ -1,13 +1,13 @@
 transfer(1){
   transfer{
-    transfer.network = {"network":"devnet", "blockchain":"Elrond"};
-    elrond_currency = {"symbol":"XEGLD", "decimals":18};
+    transfer.network = {"network":"devnet", "blockchain":"MultiversX"};
+    native_currency = {"symbol":"EGLD", "decimals":18};
     sender = {
       "account_identifier": {
         "address": "erd1ldjsdetjvegjdnda0qw2h62kq6rpvrklkc5pw9zxm0nwulfhtyqqtyc4vq"
       },
       "currency": {
-          "symbol": "XEGLD",
+          "symbol": "EGLD",
           "decimals": 18
       }
     };
@@ -24,7 +24,7 @@ transfer(1){
         "address": "erd1xtslmt67utuewwv8jsx729mxjxaa8dvyyzp7492hy99dl7hvcuqq30l98v"
       },
       "currency": {
-          "symbol": "XEGLD",
+          "symbol": "EGLD",
           "decimals": 18
       }
     };
@@ -36,7 +36,7 @@ transfer(1){
         "account":{{sender.account_identifier}},
         "amount":{
           "value":{{sender_amount}},
-          "currency":{{elrond_currency}}
+          "currency":{{native_currency}}
         }
       },
       {
@@ -46,7 +46,7 @@ transfer(1){
         "account":{{recipient.account_identifier}},
         "amount":{
           "value":{{recipient_amount}},
-          "currency":{{elrond_currency}}
+          "currency":{{native_currency}}
         }
       }
     ];
