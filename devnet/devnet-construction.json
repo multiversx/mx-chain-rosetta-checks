@@ -1,6 +1,6 @@
 {
     "network": {
-        "blockchain": "Elrond",
+        "blockchain": "MultiversX",
         "network": "devnet"
     },
     "data_directory": "",
@@ -23,7 +23,7 @@
                 "privkey": "3e4e89e501eb542c12403fb15c52479e8721f2f4dedc3b3ef0f3b47b37de006c",
                 "curve_type": "edwards25519",
                 "currency": {
-                    "symbol": "XEGLD",
+                    "symbol": "EGLD",
                     "decimals": 18
                 }
             }
