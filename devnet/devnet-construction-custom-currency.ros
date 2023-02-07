@@ -1,0 +1,37 @@
+transfer(1){
+  transfer{
+    transfer.network = {"network":"devnet", "blockchain":"Elrond"};
+    
+    custom_currency_symbol = load_env("CUSTOM_CURRENCY");
+    custom_currency = {
+      "symbol":{{custom_currency_symbol}}, 
+      "decimals":0
+    };
+    
+    sender = {
+      "account_identifier": {
+        "address": "erd1ldjsdetjvegjdnda0qw2h62kq6rpvrklkc5pw9zxm0nwulfhtyqqtyc4vq"
+      }
+    };
+
+    amount = load_env("AMOUNT");
+    sender_amount = 0-{{amount}};
+    receiver = load_env("RECEIVER");
+
+    transfer.confirmation_depth = "10";
+    transfer.operations = [
+      {
+        "operation_identifier":{"index":0},
+        "type":"ESDTTransfer",
+        "account":{{sender.account_identifier}},
+        "amount":{
+          "value":{{sender_amount}},
+          "currency":{{custom_currency}}
+        }
+      }
+    ];
+    transfer.preprocess_metadata = {
+      "receiver":{{receiver}} 
+    };
+  }
+}
