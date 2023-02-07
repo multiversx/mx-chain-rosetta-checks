@@ -25,15 +25,9 @@ rosetta-cli check:construction --configuration-file devnet-construction-with-met
 
 ### Data API
 
-Set a starting point for the data API checks:
-
-```
-export AFTER_BLOCK=1399025
-```
-
 Check the data API using historical balances:
 
 ```
 rosetta-cli check:data --configuration-file devnet-data-historical.json \
---online-url=${ROSETTA_ONLINE} --data-dir=devnet-${AFTER_BLOCK}-historical
+--online-url=${ROSETTA_ONLINE} --data-dir=devnet-historical
 ```
